@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^0.36.0
@@ -13,7 +9,7 @@ devDependencies:
     version: 3.6.2(typescript@4.9.5)
   '@iconify/json':
     specifier: ^2.2.61
-    version: 2.2.191
+    version: 2.2.346
   '@playwright/test':
     specifier: ^1.33.0
     version: 1.42.1
@@ -85,7 +81,7 @@ devDependencies:
     version: 4.9.5
   unocss:
     specifier: ^0.51.12
-    version: 0.51.13(postcss@8.4.35)(vite@4.5.2)
+    version: 0.51.13(postcss@8.5.4)(vite@4.5.2)
   unplugin-auto-import:
     specifier: ^0.15.3
     version: 0.15.3(@vueuse/core@10.9.0)
@@ -607,8 +603,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@iconify/json@2.2.191:
-    resolution: {integrity: sha512-s6gEvYgYCKce6qw6SXyLz7ChVKzhbCPiIsv3Fq/VLpYeYbU0ipFOeErIJP0dQwqTYydr9cxTvR6rPnHu6Sf3Fg==}
+  /@iconify/json@2.2.346:
+    resolution: {integrity: sha512-QcJNRnHf9UMuGdtbIISsGbUf/AArTpBr4ItaoBYryRjPiq7DHH7kcvbMdHpYcGvAMa6vidaL7g31iTLhOBgnyA==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -1051,7 +1047,7 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.51.13(postcss@8.4.35):
+  /@unocss/postcss@0.51.13(postcss@8.5.4):
     resolution: {integrity: sha512-V1QJ7md9jYtBwRc6NGep1Atc+QhaR3115B1wCo8CNM+v+ZOQzpxNsAshvOfyPzfzTj+KLtp4u4zqqaTbYGX2cw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1062,7 +1058,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.2
       magic-string: 0.30.8
-      postcss: 8.4.35
+      postcss: 8.5.4
     dev: true
 
   /@unocss/preset-attributify@0.51.13:
@@ -4955,6 +4951,12 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
+  /nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -5420,6 +5422,10 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
+  /picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+    dev: true
+
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
@@ -5528,6 +5534,15 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /postcss@8.5.4:
+    resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
     dev: true
 
   /prelude-ls@1.2.1:
@@ -6154,6 +6169,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /source-map-js@1.2.1:
+    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /source-map-support@0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
     dependencies:
@@ -6756,7 +6776,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.51.13(postcss@8.4.35)(vite@4.5.2):
+  /unocss@0.51.13(postcss@8.5.4)(vite@4.5.2):
     resolution: {integrity: sha512-EAhuQ97D7E+EsTdlCL+xoWEsvz46Se9ZAtHhJ+1W+DzMky9qrDLRyR8Caf2TPbz8dw/z0qYhoPr6/aJARG4r0g==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6769,7 +6789,7 @@ packages:
       '@unocss/cli': 0.51.13
       '@unocss/core': 0.51.13
       '@unocss/extractor-arbitrary-variants': 0.51.13
-      '@unocss/postcss': 0.51.13(postcss@8.4.35)
+      '@unocss/postcss': 0.51.13(postcss@8.5.4)
       '@unocss/preset-attributify': 0.51.13
       '@unocss/preset-icons': 0.51.13
       '@unocss/preset-mini': 0.51.13
@@ -7507,3 +7527,7 @@ packages:
       compress-commons: 2.1.1
       readable-stream: 3.6.2
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
